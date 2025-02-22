@@ -1,13 +1,14 @@
 TTS-VOICE-REWORK
 ---1---
-cd /mnt/hgfs/new-good/audiobook-production/all-languages/READY-WORDS-AUDIOBOOK-0001/andrew-gaidukevich-own-voice-german-REWORK-0-READY
-ls -tr > /home/andrewgaidukevich/LAST-RUN-own-rename-files-1-6.txt
-ls -tr > /home/andrewgaidukevich/LAST-RUN-own-rename-files-1-7.txt
-sed -i -e "s/\.mp3//g" /home/andrewgaidukevich/LAST-RUN-own-rename-files-1-7.txt
-paste /home/andrewgaidukevich/LAST-RUN-own-rename-files-1-6.txt /home/andrewgaidukevich/LAST-RUN-own-rename-files-1-7.txt > /home/andrewgaidukevich/LAST-RUN-own-rename-files-1-8.txt
-sed -i -e "s/ //g" /home/andrewgaidukevich/LAST-RUN-own-rename-files-1-8.txt
-awk '{print "sox "$0"-DONE.mp3 speed 1.65"}' /home/andrewgaidukevich/LAST-RUN-own-rename-files-1-8.txt > /home/andrewgaidukevich/LAST-RUN-own-rename-files-1-9.txt
-bash /home/andrewgaidukevich/LAST-RUN-own-rename-files-1-9.txt
+cd /mnt/hgfs/new-good/audiobook-production/all-languages/READY-WORDS-AUDIOBOOK-0001/andrew-gaidukevich-own-voice-german-REWORK-1
+###############
+ls -tr > /home/andrewgaidukevich/own-rename-files-1-6.txt
+ls -tr > /home/andrewgaidukevich/own-rename-files-1-7.txt
+sed -i -e "s/\.mp3//g" /home/andrewgaidukevich/own-rename-files-1-7.txt
+paste /home/andrewgaidukevich/own-rename-files-1-6.txt /home/andrewgaidukevich/own-rename-files-1-7.txt > /home/andrewgaidukevich/own-rename-files-1-8.txt
+sed -i -e "s/ //g" /home/andrewgaidukevich/own-rename-files-1-8.txt
+awk '{print "sox "$0"-xs.mp3 speed 0.60"}' /home/andrewgaidukevich/own-rename-files-1-8.txt > /home/andrewgaidukevich/own-rename-files-1-9.txt
+bash /home/andrewgaidukevich/own-rename-files-1-9.txt
 ----
 --2---
 #---BEFORE-2-2-THIS BEST---
@@ -19,3 +20,13 @@ paste /home/andrewgaidukevich/DONE-NEW-rename-files-1-1.txt /home/andrewgaidukev
 awk '{print "sox "$0"-CUTED-DONE.mp3 silence 1 0.2 0.2% 1 0.2 0.2% : newfile : restart"}' /home/andrewgaidukevich/DONE-NEW-rename-files-1-3.txt > /home/andrewgaidukevich/DONE-NEW-rename-files-1-4.txt 
 bash /home/andrewgaidukevich/DONE-NEW-rename-files-1-4.txt
 -----------
+---3---
+cd /mnt/hgfs/new-good/audiobook-production/all-languages/READY-WORDS-AUDIOBOOK-0001/andrew-gaidukevich-own-voice-german-REWORK-0-READY
+ls -tr > /home/andrewgaidukevich/LAST-RUN-own-rename-files-1-6.txt
+ls -tr > /home/andrewgaidukevich/LAST-RUN-own-rename-files-1-7.txt
+sed -i -e "s/\.mp3//g" /home/andrewgaidukevich/LAST-RUN-own-rename-files-1-7.txt
+paste /home/andrewgaidukevich/LAST-RUN-own-rename-files-1-6.txt /home/andrewgaidukevich/LAST-RUN-own-rename-files-1-7.txt > /home/andrewgaidukevich/LAST-RUN-own-rename-files-1-8.txt
+sed -i -e "s/ //g" /home/andrewgaidukevich/LAST-RUN-own-rename-files-1-8.txt
+awk '{print "sox "$0"-DONE.mp3 speed 1.65"}' /home/andrewgaidukevich/LAST-RUN-own-rename-files-1-8.txt > /home/andrewgaidukevich/LAST-RUN-own-rename-files-1-9.txt
+bash /home/andrewgaidukevich/LAST-RUN-own-rename-files-1-9.txt
+----
