@@ -1,1 +1,10 @@
 TTS-VOICE-REWORK
+#---BEFORE-2-2-THIS BEST---
+cd /mnt/hgfs/new-good/audiobook-production/all-languages/READY-WORDS-AUDIOBOOK-0001/andrew-gaidukevich-own-voice-german-REWORK-0
+ls -tr > /home/andrewgaidukevich/DONE-NEW-rename-files-1-1.txt
+ls -tr > /home/andrewgaidukevich/DONE-NEW-rename-files-1-2.txt
+sed -i -e "s/\-xs.mp3//g" /home/andrewgaidukevich/DONE-NEW-rename-files-1-3.txt
+paste /home/andrewgaidukevich/DONE-NEW-rename-files-1-1.txt /home/andrewgaidukevich/DONE-NEW-rename-files-1-2.txt > /home/andrewgaidukevich/DONE-NEW-rename-files-1-3.txt
+awk '{print "sox "$0"-CUTED-DONE.mp3 silence 1 0.2 0.2% 1 0.2 0.2% : newfile : restart"}' /home/andrewgaidukevich/DONE-NEW-rename-files-1-3.txt > /home/andrewgaidukevich/DONE-NEW-rename-files-1-4.txt 
+bash /home/andrewgaidukevich/DONE-NEW-rename-files-1-4.txt
+-----------
